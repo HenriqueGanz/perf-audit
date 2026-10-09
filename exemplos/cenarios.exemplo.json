@@ -1,0 +1,17 @@
+{
+  "url": "https://example.com/",
+  "cenarios": [
+    { "id": "S0", "rotulo": "Linha de base (nada bloqueado)", "bloquear": [] },
+    {
+      "id": "S1",
+      "rotulo": "Sem rastreadores (GTM, GA4, Meta)",
+      "bloquear": ["*googletagmanager.com*", "*google-analytics.com*", "*connect.facebook.net*"],
+      "verificar": ["googletagmanager", "google-analytics", "connect.facebook"]
+    },
+    {
+      "id": "S2",
+      "rotulo": "Sem chat de atendimento",
+      "bloquear": ["*widget-do-chat.example*"]
+    }
+  ]
+}

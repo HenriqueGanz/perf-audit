@@ -1,0 +1,24 @@
+{
+  "name": "perf-audit",
+  "version": "1.0.0",
+  "description": "Auditoria de performance web: PageSpeed Insights com Lighthouse local como fallback, relatorio em Markdown",
+  "private": true,
+  "license": "UNLICENSED",
+  "bin": {
+    "perf-audit": "bin/audit.js"
+  },
+  "scripts": {
+    "audit": "node bin/audit.js",
+    "evidencias": "node tools/evidence-round.js",
+    "rastreadores": "node tools/tracker-count.js",
+    "prints": "node tools/shot-report.js",
+    "pdf": "node tools/html-para-pdf.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "lighthouse": "^13.5.0",
+    "puppeteer-core": "^25.12.0"
+  }
+}
